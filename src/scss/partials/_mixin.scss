@@ -1,0 +1,55 @@
+// Creazione bottone generale
+@mixin bottone_generale {
+  background: $color_button;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+
+  img{
+    float: left;
+    width: 15px;
+  }
+  span{
+    float: left;
+    margin-left: 4px;
+  }
+}
+@mixin sign_social{
+  .bottoni{
+    padding: 20px;
+    margin-top: 30px;
+
+    .small{
+      font-size: 12px;
+      padding: 10px 0px;
+    }
+    button{
+      @include bottone_generale;
+      color: white;
+      background: #2c4792;
+    }
+  }
+}
+// Creazione sotto menu navbar
+@mixin sotto_menu {
+  .sotto_menu{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background: white;
+    border: 1px solid #58402c;
+
+    p{
+      padding: 10px;
+      color: #58402c;
+
+      &:hover{
+        background: $color_button;
+      }
+    }
+
+    &.nascosto{
+      display: none;
+    }
+  }
+}
