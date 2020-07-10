@@ -37,15 +37,17 @@ nav{
       margin: 15px;
 
       .sotto_menu{
+        display: block;
         position: absolute;
         top: 25px;
         left: 0px;
         background: white;
         border: 1px solid #58402c;
-
-        p{
+        li{
           padding: 10px;
           color: #58402c;
+          margin: 0;
+          width: 100%;
 
           &:hover{
             background: $color_button;
@@ -105,29 +107,43 @@ nav{
 // Media query navbar
 @media screen and (max-width: 750px){
   nav{
-    height: 200px;
+    height: 400px;
 
     .left{
       display: none;
     }
-
+    // Right
     .right{
-      float: none;
+      float: left;
+      width: 100%;
 
       ul{
-        width: 100%;
         display: block;
+        margin-top: 10px;
+        color: $color_text;
       }
       li{
         display: block;
+        position: relative;
+        margin: 20px;
 
         .sotto_menu{
-          position: absolute;
-          top: 25px;
-          left: 0px;
+          display: block;
+          position: relative;
+          border: none;
+          li{
+            color: #58402c;
+            padding: 0;
+            padding-bottom: 20px;
+            width: 100%;
+
+            &:hover{
+              background: $color_button;
+            }
+          }
 
           &.nascosto{
-            display: none;
+            display: block;
           }
         }
       }

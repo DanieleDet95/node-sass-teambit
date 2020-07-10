@@ -54,6 +54,7 @@ nav .right li {
 }
 
 nav .right li .sotto_menu {
+  display: block;
   position: absolute;
   top: 25px;
   left: 0px;
@@ -61,12 +62,14 @@ nav .right li .sotto_menu {
   border: 1px solid #58402c;
 }
 
-nav .right li .sotto_menu p {
+nav .right li .sotto_menu li {
   padding: 10px;
   color: #58402c;
+  margin: 0;
+  width: 100%;
 }
 
-nav .right li .sotto_menu p:hover {
+nav .right li .sotto_menu li:hover {
   background: #5b70aa;
 }
 
@@ -155,7 +158,7 @@ nav .right button span {
 
 @media screen and (max-width: 750px) {
   nav {
-    height: 200px;
+    height: 400px;
   }
 
   nav .left {
@@ -163,26 +166,41 @@ nav .right button span {
   }
 
   nav .right {
-    float: none;
+    float: left;
+    width: 100%;
   }
 
   nav .right ul {
-    width: 100%;
     display: block;
+    margin-top: 10px;
+    color: #58402c;
   }
 
   nav .right li {
     display: block;
+    position: relative;
+    margin: 20px;
   }
 
   nav .right li .sotto_menu {
-    position: absolute;
-    top: 25px;
-    left: 0px;
+    display: block;
+    position: relative;
+    border: none;
+  }
+
+  nav .right li .sotto_menu li {
+    color: #58402c;
+    padding: 0;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  nav .right li .sotto_menu li:hover {
+    background: #5b70aa;
   }
 
   nav .right li .sotto_menu.nascosto {
-    display: none;
+    display: block;
   }
 
   nav .right button {
