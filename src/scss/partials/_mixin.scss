@@ -53,3 +53,79 @@
     }
   }
 }
+
+@mixin blocco_main {
+  .blocco{
+    margin: 30px;
+  }
+  img{
+    height: 120px;
+  }
+  p{
+    margin: 10px;
+    font-size: 13px;
+  }
+}
+
+@mixin blocco_immagine_centrata {
+  .centrato{
+    display: block;
+    width: 30%;
+    margin: 40px auto;
+
+    img{
+      width: 100%;
+    }
+    h2{
+      margin: 50px auto;
+    }
+  }
+}
+
+@mixin blocco_feedback{
+  .blocco_feedback{
+    display: flex;
+    flex-direction: row;
+    background: white;
+    padding: 40px 0px;
+
+    h2{
+      font-size: 25px;
+      color: $color_text;
+      margin-top: 10px;
+      margin-bottom: 70px;
+    }
+
+    p{
+      margin-bottom: 40px;
+      color: $color_text;
+    }
+
+    a{
+      color: blue;
+    }
+
+    .left{
+      width: 50%;
+
+      img{
+        width: 100%;
+      }
+
+    }
+
+    .right{
+      width: 25%;
+      text-align: left;
+
+      img{
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+  .blocco_feedback.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

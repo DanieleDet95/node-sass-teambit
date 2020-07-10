@@ -244,3 +244,291 @@ nav .right button span {
   }
 }
 
+main {
+  text-align: center;
+  background: #fee7d1;
+  padding: 30px 0px;
+}
+
+main .container h2 {
+  font-size: 25px;
+  color: #58402c;
+  width: 50%;
+  margin: 20px auto;
+}
+
+main .container .flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .container .flex-container .blocco {
+  margin: 30px;
+}
+
+main .container .flex-container img {
+  height: 120px;
+}
+
+main .container .flex-container p {
+  margin: 10px;
+  font-size: 13px;
+}
+
+main .container .centrato {
+  display: block;
+  width: 30%;
+  margin: 40px auto;
+}
+
+main .container .centrato img {
+  width: 100%;
+}
+
+main .container .centrato h2 {
+  margin: 50px auto;
+}
+
+main .container hr {
+  color: #58402c;
+  margin: 70px 0px;
+}
+
+main .blocco_feedback {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  padding: 40px 0px;
+}
+
+main .blocco_feedback h2 {
+  font-size: 25px;
+  color: #58402c;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+main .blocco_feedback p {
+  margin-bottom: 40px;
+  color: #58402c;
+}
+
+main .blocco_feedback a {
+  color: blue;
+}
+
+main .blocco_feedback .left {
+  width: 50%;
+}
+
+main .blocco_feedback .left img {
+  width: 100%;
+}
+
+main .blocco_feedback .right {
+  width: 25%;
+  text-align: left;
+}
+
+main .blocco_feedback .right img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+main .blocco_feedback.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+main .messaggio {
+  width: 37%;
+  margin: 0 auto;
+}
+
+main .messaggio h2 {
+  font-size: 25px;
+  color: #58402c;
+  width: 100%;
+  margin: 20px auto;
+}
+
+main .messaggio h2 img {
+  width: 25px;
+}
+
+main .messaggio .text {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 1px solid #5b70aa;
+  border-radius: 10px;
+  margin: 50px 0;
+  padding: 20px;
+}
+
+main .messaggio .text p {
+  margin-bottom: 10px;
+}
+
+main .messaggio .text .autori {
+  display: flex;
+}
+
+main .messaggio .text .autori img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+main .messaggio .text .autori .info {
+  text-align: left;
+}
+
+main .messaggio .text .autori .info p {
+  margin: 2px;
+}
+
+main .messaggio .text .autori .info p.blue {
+  color: blue;
+}
+
+main .messaggio .bottoni {
+  padding: 20px;
+  margin-top: 30px;
+}
+
+main .messaggio .bottoni .small {
+  font-size: 12px;
+  padding: 10px 0px;
+}
+
+main .messaggio .bottoni button {
+  background: #5b70aa;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: #2c4792;
+}
+
+main .messaggio .bottoni button img {
+  float: left;
+  width: 15px;
+}
+
+main .messaggio .bottoni button span {
+  float: left;
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 750px) {
+  main h2 {
+    width: 50%;
+    margin: 20px auto;
+  }
+
+  main .flex-container {
+    display: block;
+  }
+
+  main .flex-container .blocco {
+    margin: 30px;
+  }
+
+  main .flex-container img {
+    height: 120px;
+  }
+
+  main .flex-container p {
+    margin: 10px;
+    font-size: 13px;
+  }
+
+  main .centrato {
+    display: block;
+    width: 30%;
+    margin: 40px auto;
+  }
+
+  main .centrato img {
+    width: 100%;
+  }
+
+  main .centrato h2 {
+    margin: 50px auto;
+  }
+
+  main hr {
+    margin: 20px 0px;
+  }
+
+  main .blocco_feedback {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    padding: 40px 0px;
+  }
+
+  main .blocco_feedback h2 {
+    font-size: 25px;
+    color: #58402c;
+    margin-top: 10px;
+    margin-bottom: 70px;
+  }
+
+  main .blocco_feedback p {
+    margin-bottom: 40px;
+    color: #58402c;
+  }
+
+  main .blocco_feedback a {
+    color: blue;
+  }
+
+  main .blocco_feedback .left {
+    width: 50%;
+  }
+
+  main .blocco_feedback .left img {
+    width: 100%;
+  }
+
+  main .blocco_feedback .right {
+    width: 25%;
+    text-align: left;
+  }
+
+  main .blocco_feedback .right img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  main .blocco_feedback.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  main .blocco_feedback {
+    display: block;
+  }
+
+  main .blocco_feedback .left {
+    width: 80%;
+    margin: auto;
+  }
+
+  main .blocco_feedback .right {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+
+  main .blocco_feedback.reverse {
+    display: block;
+  }
+
+  main .messaggio {
+    width: 80%;
+  }
+}
+
